@@ -1,5 +1,5 @@
 
-
+// https://leetcode.com/problems/sqrtx
 var mySqrt = function(x){
     if ( x < 0 ) return NaN;
 
