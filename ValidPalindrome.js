@@ -1,5 +1,5 @@
 
-// https://leetcode.com/problems/valid-palindrome
+// https://leetcode.com/problems/valid-palindrome\4
 var isPalindrome = function(s){
     s = s.replace(/[^a-z0-9]/gi, '').toLowerCase();
 
