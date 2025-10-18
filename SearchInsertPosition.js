@@ -4,10 +4,10 @@ var searchInsert = function(nums, target) {
 
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] >= target) {
-            return i; // أول رقم أكبر أو يساوي الهدف
+            return i; 
         }
     }
-    return nums.length; // لو الهدف أكبر من آخر عنصر
+    return nums.length;
 };
 
 console.log(searchInsert([1,3,5,6], 5));
