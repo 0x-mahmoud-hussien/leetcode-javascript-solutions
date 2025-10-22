@@ -1,5 +1,5 @@
 
-
+// https://leetcode.com/problems/minimize-string-length
 var minimizedStringLength = function(s){
 
     let str = [...new Set(s)].join('');
