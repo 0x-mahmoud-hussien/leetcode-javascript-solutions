@@ -1,5 +1,5 @@
 
-https://leetcode.com/problems/excel-sheet-column-number
+//https://leetcode.com/problems/excel-sheet-column-number
 var titleToNumber = function(columnTitle){
 
     let result = 0;
