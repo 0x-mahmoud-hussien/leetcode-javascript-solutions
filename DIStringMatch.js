@@ -9,7 +9,7 @@ var diStringMatch = function(s) {
         if (s[i] === 'I') {
             result.push(low);  
             low++;            
-        } else { // 'D'
+        } else { 
             result.push(high);
             high--;            
         }
