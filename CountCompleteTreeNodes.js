@@ -7,12 +7,25 @@ function TreeNode(val, left, right) {
 }
 
 var countNodes = function(root) {
-    if(!root) return 0;
-    let left = countNodes(root.left);
-    let right = countNodes(root.right);
-    let result = left + right + 1;
+    if (!root) return 0;
 
-    return result;
+    let leftHeight = getHeight(root.left);
+    let rightHeight = getHeight(root.right);
+
+    if (leftHeight === rightHeight) {
+        return (1 << leftHeight) + countNodes(root.right);
+    } else {
+        return (1 << rightHeight) + countNodes(root.left);
+    }
+};
+
+function getHeight(node) {
+    let height = 0;
+    while (node) {
+        height++;
+        node = node.left;
+    }
+    return height;
 }
 
 let n4 = new TreeNode(4);
